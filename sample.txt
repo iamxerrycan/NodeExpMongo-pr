@@ -1,0 +1,28 @@
+1st ==========================================================================
+
+// common js importing //
+const index = require("./index.js");
+
+// module ecmascript importing //
+// const import {sum , diff } from './index.js'
+// console.log(index);
+
+// file system ==================
+
+const fs = require("fs");
+
+const data = fs.readFile('./sample.txt', 'utf-8',(error , data)=>{
+    console.log(data);
+})
+
+// const data = fs.readFileSync("./sample.txt", "utf-8", (text, err) => {
+//   console.log(text);
+// });
+
+// express simple ===========
+const express = require('express')
+
+const app = express()
+
+
+2nd =====================================================================================
